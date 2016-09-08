@@ -21,7 +21,7 @@
         <td><%= produto.price %></td>
         <td><%= produto.description %></td>
         <td><%= produto.amount %></td>
-        <%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
+        <td><%= produto.pic %></td>
         <td><%= link_to 'Show', produto %></td>
         <td><%= link_to 'Edit', edit_produto_path(produto) %></td>
         <td><%= link_to 'Destroy', produto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
