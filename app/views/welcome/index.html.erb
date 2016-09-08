@@ -1,18 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <link rel="stylesheet" href="assets/stylesheets/welcome.scss" />
+</head>
+
+<body>
 <h1 align="center">Sistema de controle de estoque</h1>
-<h2 align="center">Loja das Jujubas</h2>
+<h2 align="middle"><a href= "/"> Loja das Jujubas</a></h2>
+      <!-- Features -->
+        <div id="features-wrapper">
+          <section id="features" class="container">
+            <header>
+              <h2>Seja bem vindo ao nosso sistema</strong>!</h2>
+            </header>
+            <div class="row">
+              <div class="4u 12u(mobile)">
 
-  <div class="container" align="center">
-  <div class="content1 content">
-    <li><h1><%= link_to "Lista de produtos", produtos_path  %><h1></li>
-  </div>
-  <div class="content2 content">
-    <li><h1><%= link_to "Cadastrar produto", new_produto_path  %></h1></li>
-  </div>
-  <div class="content3 content">
-    <li><h1><%= link_to "Registar venda", produtos_path  %></h1></li>
-  </div>
+                <!-- Feature -->
+                  <section>
+                    <a href="#" class="image featured"><img src="Sistema/app/assets/images/back.jpg" alt="" /></a>
+                    <header>
+                     <ul class="actions">
+                      <li><a href= "/produtos" class="button icon fa-file">Lista de produtos</a></li>
+                      </ul>
+                    </header>
+                    <p>Listar todos os produtos cadastrados no sistema</p>
+                  </section>
 
-  </div>
+              </div>
+              <div class="4u 12u(mobile)">
+
+                <!-- Feature -->
+                  <section>
+                    <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+                    <header>
+                      <ul class="actions">
+                      <li><a href= "/produtos/new" class="button icon fa-file">Adicionar produto</a></li>
+                      </ul>
+                    </header>
+
+                    <p>Adicionar um novo produto ao sistema</p>
+                  </section>
+
+              </div>
+              <div class="4u 12u(mobile)">
+
+                <!-- Feature -->
+                  <section>
+                    <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+                    <header>
+                    <ul class="actions">
+                    <li><a href= "/produtos" class="button icon fa-file">Registrar venda</a></li>
+                    </ul>
+                    </header>
+
+                    <p>Registrar que uma venda foi realizada, alterando a quantidade no estoque.</p>
+                  </section>
+
+              </div>
+            </div>
+          </section>
+        
+</body>
+
 <footer>
- <p align="center">Copyright ©2016 - GTi. All Rights Reserved</p>
+ <p>Copyright ©2016 - GTi. All Rights Reserved</p>
  </footer>
+</html>
