@@ -5,11 +5,11 @@ one:
   price: MyString
   description: MyText
   amount: 1
-  pic: MyString
+  picture: MyString
 
 two:
   name: MyString
   price: MyString
   description: MyText
   amount: 1
-  pic: MyString
+  picture: MyString
