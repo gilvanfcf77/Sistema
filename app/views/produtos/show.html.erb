@@ -1,29 +1,29 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Nome:</strong>
   <%= @produto.name %>
 </p>
 
 <p>
-  <strong>Price:</strong>
+  <strong>Preço:</strong>
   <%= @produto.price %>
 </p>
 
 <p>
-  <strong>Description:</strong>
+  <strong>Descrição:</strong>
   <%= @produto.description %>
 </p>
 
 <p>
-  <strong>Amount:</strong>
+  <strong>Quantidade:</strong>
   <%= @produto.amount %>
 </p>
 
 <p>
-  <strong>Picture:</strong>
+  <strong>Imagem:</strong>
   <%= image_tag(@produto.picture_url, :width => 600) if @produto.picture.present? %>
 </p>
 
-<%= link_to 'Edit', edit_produto_path(@produto) %> |
-<%= link_to 'Back', produtos_path %>
+<%= link_to 'Editar', edit_produto_path(@produto) %> |
+<%= link_to 'Voltar', produtos_path %>
