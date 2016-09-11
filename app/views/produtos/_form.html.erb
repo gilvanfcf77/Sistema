@@ -1,3 +1,8 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+<div class="prod">
 <%= form_for(@produto, :html => { :multipart => true }) do |f| %>
   <% if @produto.errors.any? %>
     <div id="error_explanation">
@@ -35,3 +40,6 @@
     <%= f.submit %>
   </div>
 <% end %>
+</div>
+</body>
+</html>
