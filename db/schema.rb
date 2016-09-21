@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20160908204944) do
     t.text     "description"
     t.integer  "amount"
     t.string   "picture"
+    t.string   "code"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end

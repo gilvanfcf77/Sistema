@@ -6,6 +6,7 @@ class CreateProdutos < ActiveRecord::Migration
       t.text :description
       t.integer :amount
       t.string :picture
+      t.string :code
 
       t.timestamps null: false
     end
