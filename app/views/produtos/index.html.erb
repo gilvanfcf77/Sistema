@@ -9,8 +9,8 @@
       <th>Preço</th>
       <th>Descrição</th>
       <th>Quantidade</th>
-      <th>Código</th>
       <th>Imagem</th>
+      <th>Código</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,8 +22,8 @@
         <td><%= produto.price %></td>
         <td><%= produto.description %></td>
         <td><%= produto.amount %></td>
-        <td><%= produto.code %></td>
         <td><%= produto.picture %></td>
+        <td><%= produto.code %></td>
         <td><%= link_to 'Exibir', produto %></td>
         <td><%= link_to 'Editar', edit_produto_path(produto) %></td>
         <td><%= link_to 'Excluir', produto, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
