@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'sell/index'
+
   resources :produtos
   resources :produtos
   resources :produtos
