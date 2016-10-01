@@ -10,7 +10,13 @@
 <h2 align="middle"><a href= "/">Flux-Control</a></h2>
          
 
-
+<%= form_tag(produtos_path, :method => "get", id: "search-form") do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search Recipes" %>
+    <%= submit_tag "Search", :name => nil %>
+	<% if @produtos.blank? %>
+  	<h4>There are no recipes containing the term <%= params[:search] %>.</h4>
+	<% end %>
+<% end %>
 
 </body>
 
