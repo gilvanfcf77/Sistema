@@ -8,6 +8,53 @@
 */
 
 /* Reset */
+
+.control-group {
+margin-bottom: 10px;
+}
+
+.login {
+margin: 20px auto;
+width: 300px;
+}
+
+.login-screen {
+padding: 20px;
+border-radius: 5px;
+background-image: url("https://s.graphiq.com/sites/default/files/2307/media/images/Light_Blue_429604_i0.png");
+background-color: #cccccc;
+}
+
+.login-form {
+text-align: center;
+}
+
+.app-title {
+text-align: center;
+color: #777;
+}
+
+body {
+}
+
+.header{
+	top: calc(50% - 35px);
+	left: calc(50% - 255px);
+	z-index: 2;
+}
+
+.header div{
+	color: #000;
+	font-family: 'Exo', sans-serif;
+	font-size: 35px;
+	font-weight: 200;
+}
+
+.header div span{
+	color: #5379fa !important;
+}
+
+
 .prod{
 	color: red;
     padding: 80px 160px;
@@ -1117,12 +1164,7 @@ li a {
 		color: #777;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
-		font-weight: 600;
-		text-transform: uppercase;
-		color: #888;
-	}
-
+	
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 		color: inherit;
 		text-decoration: none;
@@ -1476,12 +1518,9 @@ li a {
 		display: inline-block;
 		background: #ed786a;
 		color: #fff !important;
-		text-transform: uppercase;
-		border-radius: 4px;
-		border: 0;
+		border-radius: 10px;
+		border: 10;
 		outline: 0;
-		font-size: 1em;
-		box-shadow: 0.125em 0.175em 0 0 rgba(0, 0, 0, 0.125);
 		font-weight: 600;
 		text-align: center;
 	}

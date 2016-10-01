@@ -9,15 +9,15 @@
 <h2 align="middle">Sistema de controle de estoque</h2>
 <h2 align="middle"><a href= "/">Flux-Control</a></h2>
          
-
+<h1>
 <%= form_tag(produtos_path, :method => "get", id: "search-form") do %>
-    <%= text_field_tag :search, params[:search], placeholder: "Search Recipes" %>
-    <%= submit_tag "Search", :name => nil %>
+    <%= text_field_tag :search, params[:search], placeholder: "Buscar produtos" %>
+    <%= submit_tag "Buscar", :name => nil %>
 	<% if @produtos.blank? %>
   	<h4>There are no recipes containing the term <%= params[:search] %>.</h4>
 	<% end %>
 <% end %>
-
+</h1>
 </body>
 
 <footer>
