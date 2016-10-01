@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Login Form</title>
-        <link rel="stylesheet" href="css/style.css"> 
+        <link rel="stylesheet" href="css/style.css">
   </head>
 
 <body>
@@ -14,7 +14,7 @@
     </div>
     <div class="login-form">
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  
+
   <div class="control-group">
     <h3>Nome de usuário<br>
     <%= f.email_field :email, autofocus: true %>
@@ -36,7 +36,7 @@
   <% end -%>
 
   <div class="actions">
-    <%= f.submit "Log in" %>
+    <%= f.submit "Entrar" %>
   </div>
 <% end %>
 
