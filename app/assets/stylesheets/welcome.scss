@@ -100,8 +100,7 @@
 	}
 
 	p {
-		text-align: justify;
-		margin-bottom: 2em;
+		
 	}
 
 	ul, ol, dl, table, blockquote {
@@ -181,10 +180,8 @@ li a {
 
 	footer{
 	color:blue;
-  	left:0px;
-   	bottom:0px;
-   	height:30px;
-   	width:100%;
+  	text-align:center;
+   
     }
 
 
@@ -197,7 +194,7 @@ li a {
 		vertical-align: baseline;
 	}
 
-	article, aside, details, figcaption, figure, footer, hgroup, menu, nav, section {
+	article, aside, details, figcaption, figure, hgroup, menu, nav, section {
 		display: block;
 	}
 
