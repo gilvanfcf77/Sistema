@@ -23,8 +23,8 @@ ul {
 }
 
 	footer{
-	color:blue;
-  	text-align:center;
+   color:blue;
+   text-align:center;
    
 }
 
@@ -86,6 +86,7 @@ ul.topnav li.icon {display: none;}
 }
 
 .tb{
+
 text-align: center;
 margin: auto;
 }
