@@ -40,7 +40,6 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
   config.action_mailer.perform_deliveries = true
 
-  config.action_mailer.default_url_options = { :host => 'flux-control.herokuapp.com' }
-
+  config.action_mailer.default_url_options = { :host => 'my@gmail.com' }
 
 end
