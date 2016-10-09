@@ -1,9 +1,13 @@
+<div class="tb">
+
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Nome:</strong>
+  <h2><strong>Nome:</strong>
   <%= @produto.name %>
+  </h2>
 </p>
+
 
 <p>
   <strong>Preço:</strong>
@@ -32,3 +36,4 @@
 
 <%= link_to 'Editar', edit_produto_path(@produto) %> |
 <%= link_to 'Voltar', produtos_path %>
+</div>
