@@ -1,3 +1,5 @@
+<div class="tb"> 
+
 <h2>Criar Conta</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -15,7 +17,7 @@
 
     <% end %>
     <%= f.password_field :password, autocomplete: "off" %>
-      <em>(No mínimo <%= @minimum_password_length %> caracteres)</em>
+      <br><em>(No mínimo <%= @minimum_password_length %> caracteres)</em>
   </div>
 
   <div class="field">
@@ -29,3 +31,5 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+</div>
