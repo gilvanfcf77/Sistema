@@ -1,5 +1,6 @@
 class Produto < ActiveRecord::Base
-	mount_uploader :picture, PictureUploader
+
+mount_uploader :picture, PictureUploader
 
 
 def self.search(search)

@@ -14,8 +14,7 @@
 
   <div class="">
     <%= f.label :produto %><br>
-    <%= f.text_field :produto %>
-  
+    <%= f.collection_select(:produto, Produto.all, :id, :name, prompt: true) %>
   </div>
 
   <div class="">
