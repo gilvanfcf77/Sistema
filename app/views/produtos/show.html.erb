@@ -1,0 +1,39 @@
+<div class="tb">
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <h2><strong>Nome:</strong>
+  <%= @produto.name %>
+  </h2>
+</p>
+
+
+<p>
+  <strong>Preço:</strong>
+  <%= @produto.price %>
+</p>
+
+<p>
+  <strong>Descrição:</strong>
+  <%= @produto.description %>
+</p>
+
+<p>
+  <strong>Quantidade:</strong>
+  <%= @produto.amount %>
+</p>
+
+<p>
+  <strong>Imagem:</strong>
+  <%= image_tag(@produto.picture_url, :width => 600) if @produto.picture.present? %>
+</p>
+
+<p>
+  <strong>Código:</strong>
+  <%= @produto.code %>
+</p>
+
+<%= link_to 'Editar', edit_produto_path(@produto) %> |
+<%= link_to 'Voltar', produtos_path %>
+</div>

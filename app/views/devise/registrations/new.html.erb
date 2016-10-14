@@ -1,0 +1,35 @@
+<div class="tb"> 
+
+<h2>Criar Conta</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.email_field :email, autofocus: true %>
+
+  </div>
+
+  <div class="field">
+    <%= f.label :senha %>
+    <% if @minimum_password_length %>
+
+    <% end %>
+    <%= f.password_field :password, autocomplete: "off" %>
+      <br><em>(No mínimo <%= @minimum_password_length %> caracteres)</em>
+  </div>
+
+  <div class="field">
+    <%= f.label :Confirme_a_senha%>
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Criar" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+
+</div>
