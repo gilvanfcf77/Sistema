@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   resources :vendas
   devise_for :users
   get 'sell/index'
-
+  get  '/about'  , to: 'about#about'
   resources :produtos
   #get 'welcome/index'
   
