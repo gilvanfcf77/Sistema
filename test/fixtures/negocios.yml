@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  produto: MyString
+  tipo: MyString
+  quantidade: 1
+  codigo: 1
+  data: 2016-10-13
+
+two:
+  produto: MyString
+  tipo: MyString
+  quantidade: 1
+  codigo: 1
+  data: 2016-10-13
