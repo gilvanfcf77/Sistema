@@ -42,8 +42,6 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { :host => 'my@gmail.com' }
 
-<<<<<<< HEAD
+
 end
-=======
-end
->>>>>>> 88ffd1d8352a8732145d9c292173ef1a9d3b5c79
+
