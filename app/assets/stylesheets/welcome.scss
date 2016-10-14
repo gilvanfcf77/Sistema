@@ -37,7 +37,6 @@ ul.topnav li a:hover {background-color: #555;}
 
 /* Basic */
 
-	
 
 	body {
 		background: #FFF;
@@ -191,24 +190,12 @@ body {
 }
 
 
-.prod{
-	color: red;
-    padding: 80px 160px;
-    text-decoration: none;
-    float: center;
-
-}
-
-
 li a {
     color: red;
     padding: 8px 16px;
     text-decoration: none;
     float: left;
 }
-
-
-
 
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -1433,35 +1420,7 @@ li a {
 	form input[type="text"],
 	form input[type="email"]
 	input[type="password"],
-	form select,
-	form textarea {
-		-moz-transition: background-color 0.25s ease-in-out;
-		-webkit-transition: background-color 0.25s ease-in-out;
-		-ms-transition: background-color 0.25s ease-in-out;
-		transition: background-color 0.25s ease-in-out;
-		-webkit-appearance: none;
-		display: block;
-		border: 0;
-		background: #e8e8e8;
-		width: 100%;
-		box-shadow: inset 2px 2px 0px 0px rgba(0, 0, 0, 0.1);
-		border-radius: 4px;
-		line-height: 1.25em;
-		padding: 0.75em 1em 0.75em 1em;
-	}
-
-		form input[type="text"]:focus,
-		form input[type="email"]
-		input[type="password"]:focus,
-		form select:focus,
-		form textarea:focus {
-			background: #f0f0f0;
-		}
-
-	form textarea {
-		min-height: 11em;
-	}
-
+	
 	form .formerize-placeholder {
 		color: #555 !important;
 	}

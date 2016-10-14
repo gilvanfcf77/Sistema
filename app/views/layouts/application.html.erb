@@ -5,42 +5,42 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-<script>
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
+  <script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
         x.className += " responsive";
-    } else {
+      } else {
         x.className = "topnav";
+      }
     }
-}
-</script>
+  </script>
 
 </head>
 <body>
   
-   <ul class="topnav" id="myTopnav">
+ <ul class="topnav" id="myTopnav">
   <li><a href="/">Flux<span>Control</span></a></li>
-    <li> <%= link_to 'Produtos', produtos_path, :class => 'navbar-link' %> </li>
-    <li> <%= link_to 'Adicionar produto', new_produto_path, :class => 'navbar-link' %> </li>
-    <li><a href="">Contato</a></li>
-    <li><a href="/about">Sobre nós</a></li>
-    <% if user_signed_in? %>
-          <li><a href="">Logado como: <%= current_user.email %>.</a></li>
-          <li><%= link_to 'Editar conta', edit_user_registration_path, :class => 'navbar-link' %></li>
-          <li><%= link_to "Sair", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>
-        <% else %>
-          <li><%= link_to "Criar Conta", new_user_registration_path, :class => 'navbar-link'  %> |</li>
-           <li><%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %></li>
-        <% end %>    
+  <li> <%= link_to 'Produtos', produtos_path, :class => 'navbar-link' %> </li>
+  <li> <%= link_to 'Adicionar produto', new_produto_path, :class => 'navbar-link' %> </li>
+  <li><a href="">Contato</a></li>
+  <li><a href="/about">Sobre nós</a></li>
+  <% if user_signed_in? %>
+  <li><a href="">Logado como: <%= current_user.email %>.</a></li>
+  <li><%= link_to 'Editar conta', edit_user_registration_path, :class => 'navbar-link' %></li>
+  <li><%= link_to "Sair", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>
+  <% else %>
+  <li><%= link_to "Criar Conta", new_user_registration_path, :class => 'navbar-link'  %> |</li>
+  <li><%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %></li>
+  <% end %>    
   <li class="icon">
     <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
   </li>
-  </ul>
-  
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+</ul>
+
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 
 <%= yield %>
 
