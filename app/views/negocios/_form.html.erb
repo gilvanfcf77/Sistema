@@ -1,0 +1,42 @@
+<center>
+<%= form_for(@negocio) do |f| %>
+  <% if @negocio.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@negocio.errors.count, "error") %> prohibited this negocio from being saved:</h2>
+
+      <ul>
+      <% @negocio.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :produto %><br>
+    <%= f.text_field :produto %>
+  
+  </div>
+  <div class="field">
+  <select>
+  <option value="venda">Venda</option>
+  <option value="compra">Compra</option>
+  </select> 
+  </div>
+  <div class="field">
+    <%= f.label :quantidade %><br>
+    <%= f.number_field :quantidade %>
+  </div>
+  <div class="field">
+    <%= f.label :codigo %><br>
+    <%= f.number_field :codigo %>
+  </div>
+  <div class="field">
+    <%= f.label :data %><br>
+    <%= f.date_select :data %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+</center>
