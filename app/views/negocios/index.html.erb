@@ -1,6 +1,8 @@
+<div class="tb">
+
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Negocios</h1>
+<h2 align="center">Lista de Negócios</h2>
 
 <table>
   <thead>
@@ -17,7 +19,14 @@
   <tbody>
     <% @negocios.each do |negocio| %>
       <tr>
-        <td><%= negocio.produto %></td>
+        
+        <td><%= if(negocio.produto.blank? == true)
+        print ""
+        else
+        negocio.produto.name
+        end
+        %></td>
+        
         <td><%= negocio.tipo %></td>
         <td><%= negocio.quantidade %></td>
         <td><%= negocio.codigo %></td>
@@ -32,4 +41,5 @@
 
 <br>
 
-<%= link_to 'New Negocio', new_negocio_path %>
+<%= link_to 'Novo negócio', new_negocio_path %>
+</div>

@@ -27,14 +27,23 @@ class NegociosController < ApplicationController
   def create
     @negocio = Negocio.new(negocio_params)
 
+        if @negocio.tipo = 'Compra'
+          print "<h1>OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo</h1>"
+        else
+          print "<h1>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa</h1>"
+        end
+      
+
     respond_to do |format|
-      if @negocio.save
+      if @negocio.save       
+
         format.html { redirect_to @negocio, notice: 'Negocio was successfully created.' }
         format.json { render :show, status: :created, location: @negocio }
       else
         format.html { render :new }
         format.json { render json: @negocio.errors, status: :unprocessable_entity }
       end
+
     end
   end
 
@@ -70,6 +79,6 @@ class NegociosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def negocio_params
-      params.require(:negocio).permit(:produto, :tipo, :quantidade, :codigo, :data)
+      params.require(:negocio).permit(:produto_id, :tipo, :quantidade, :codigo, :data)
     end
 end

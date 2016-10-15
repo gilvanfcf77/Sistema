@@ -1,12 +1,5 @@
 Rails.application.routes.draw do
   resources :negocios
-  resources :vendas
-  resources :vendas
-  resources :vendas
-  resources :vendas
-  resources :vendas
-  resources :vendas
-  resources :vendas
   devise_for :users
   get 'sell/index'
   get  '/about'  , to: 'about#about'
