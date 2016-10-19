@@ -26,12 +26,9 @@ class NegociosController < ApplicationController
   # POST /negocios.json
   def create
     @negocio = Negocio.new(negocio_params)
-
-        if @negocio.tipo = 'Compra'
-          print "<h1>OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo</h1>"
-        else
-          print "<h1>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa</h1>"
-        end
+     
+    print "<h2>OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo</h2>"
+        
       
 
     respond_to do |format|

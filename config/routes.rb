@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   get 'sell/index'
   get  '/about'  , to: 'about#about'
+  get  '/contact'  , to: 'contact#contact'
   resources :produtos
   #get 'welcome/index'
   

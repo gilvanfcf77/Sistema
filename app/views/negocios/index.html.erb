@@ -3,8 +3,9 @@
 <p id="notice"><%= notice %></p>
 
 <h2 align="center">Lista de Negócios</h2>
+<h2><%= link_to 'Novo negócio', new_negocio_path %></h2>
 
-<table>
+<table border="10" bgcolor=lightgray>
   <thead>
     <tr>
       <th>Produto</th>
@@ -31,15 +32,13 @@
         <td><%= negocio.quantidade %></td>
         <td><%= negocio.codigo %></td>
         <td><%= negocio.data %></td>
-        <td><%= link_to 'Show', negocio %></td>
-        <td><%= link_to 'Edit', edit_negocio_path(negocio) %></td>
-        <td><%= link_to 'Destroy', negocio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Exibir', negocio %></td>
+        <td><%= link_to 'Editar', edit_negocio_path(negocio) %></td>
+        <td><%= link_to 'Excluir', negocio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'Novo negócio', new_negocio_path %>
 </div>
