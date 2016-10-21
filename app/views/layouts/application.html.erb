@@ -23,9 +23,9 @@
  <ul class="topnav" id="myTopnav">
   <li><a href="/">Flux<span>Control</span></a></li>
   <li> <%= link_to 'Produtos', produtos_path, :class => 'navbar-link' %> </li>
+  <li> <%= link_to 'Negócios', negocios_path, :class => 'navbar-link' %> </li>
   <li><a href="/contact">Contato</a></li>
   <li><a href="/about">Sobre nós</a></li>
-  <li> <%= link_to 'Negócios', negocios_path, :class => 'navbar-link' %> </li>
   <% if user_signed_in? %>
   <li><a href="">Logado como: <%= current_user.email %>.</a></li>
   <li><%= link_to 'Editar conta', edit_user_registration_path, :class => 'navbar-link' %></li>
