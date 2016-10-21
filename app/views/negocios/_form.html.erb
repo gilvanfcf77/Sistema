@@ -16,10 +16,7 @@
   <div class="">
     <%= f.label :produto_id %>
     <%= f.collection_select(:produto_id, Produto.all, :id, :name, prompt: true)  %>
-  </div>
-
-  <div class="">
-  <%= select("negocio", "tipo", ['Compra', 'Venda'], {include_blank: true}) %>
+    <%= select("negocio", "tipo", ['Compra', 'Venda'], {include_blank: true}) %>
   </div>
   
 
