@@ -16,11 +16,12 @@
     <h3>Nome</h3>
     <%= f.text_field :name %>
   </div>
+  
   <div class="field">
     <h3>Preço</h3>
-
-<%= f.text_field :price, :class => 'price', :value => (number_with_precision(f.object.price, :precision =>2) || 0) %>
+<%= f.number_field :price, :class => 'price', :step=> "0.01", :value => (number_with_precision(f.object.price, :precision =>2) || 0) %>
   </div>
+
   <div class="field">
     <h3>Descrição</h3>
     <%= f.text_area :description %>

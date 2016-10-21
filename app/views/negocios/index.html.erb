@@ -34,7 +34,6 @@
         <td><%= negocio.data %></td>
         <td><%= link_to 'Exibir', negocio %></td>
         <td><%= link_to 'Editar', edit_negocio_path(negocio) %></td>
-
         <td><%= link_to 'Excluir', negocio, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
       </tr>
     <% end %>
