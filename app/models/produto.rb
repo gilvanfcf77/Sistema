@@ -1,5 +1,6 @@
 class Produto < ActiveRecord::Base
-
+belongs_to :user
+belongs_to :negocio
 validates :name, presence: true
 validates :price, presence: true
 validates :code, presence: true

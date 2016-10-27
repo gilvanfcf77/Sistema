@@ -6,17 +6,10 @@ class ProdutosController < ApplicationController
   # GET /produtos
   # GET /produtos.json
   def index
-  @produtos = Produto.all
+  @produtos = Produto.where(user: current_user)
   end
 
-  def index
-  @produtos = Produto.all
-  if params[:search]
-    @produtos = Produto.search(params[:search]).order("created_at DESC")
-  else
-    @produtos = Produto.all.order("created_at DESC")
-  end
-  end
+ 
 
 
   # GET /produtos/1
@@ -36,7 +29,7 @@ class ProdutosController < ApplicationController
   # POST /produtos
   # POST /produtos.json
   def create
-    @produto = Produto.new(produto_params)
+    @produto = current_user.produtos.build(produto_params)
 
     respond_to do |format|
       if @produto.save
