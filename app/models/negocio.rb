@@ -1,5 +1,5 @@
 class Negocio < ActiveRecord::Base
-  has_many :produtos
+ belongs_to :produto
   validates :produto, presence: true
   validates :quantidade, :numericality => { :greater_than => 0 }
   validates :quantidade, presence: true
